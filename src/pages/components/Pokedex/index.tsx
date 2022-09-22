@@ -13,6 +13,7 @@ const Pokedex = (props: { pokemons: any; loading: any; page: number; setPage: an
 			setPage(page + 1)
 		}
 	}
+
 	return (
 		<div>
 			<div className="pokedex-header">
@@ -23,6 +24,7 @@ const Pokedex = (props: { pokemons: any; loading: any; page: number; setPage: an
 					onLeftClick={onLeftClickHandler}
 					onRightClick={onRightClickHandler}
 				/>
+
 			</div>
 			{loading && !pokemons ? (
 				<div>Carregando...</div>

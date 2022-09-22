@@ -36,6 +36,7 @@ const PokemonCard = (props: { pokemon: any }) => {
 		</div>
 	</div>
 	)
+
 }
 
 export default PokemonCard

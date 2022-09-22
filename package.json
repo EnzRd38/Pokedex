@@ -17,11 +17,19 @@
     "react-dom": "18.2.0",
     "styled-components": "^5.3.5"
   },
+<<<<<<< HEAD
   "browser": {
     "fs": false,
     "path": false,
     "os": false
   },
+=======
+	"browser": {
+		"fs": false,
+		"path": false,
+		"os": false
+	},
+>>>>>>> 9c63704dcc5eea7bd9c7941e35999ab41038ae3b
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",

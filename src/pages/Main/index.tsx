@@ -11,6 +11,7 @@ interface ListPokemons {
 		order: number,
 		id: number
 	]
+
 }
 
 interface Props {
@@ -56,11 +57,11 @@ const Main = () => {
 			setPokemons(result)
 			setLoading(false)
 			setTotalPages(Math.ceil(data.count / itensPerPage))
+
 		} catch (error) {
 			console.log('error: ', error)
 		}
 	}
-
 	const searchFavoritePokemonsHandler = async (favorites) => {
 		setLoading(true)
 		setNotFound(false)
@@ -110,6 +111,7 @@ const Main = () => {
 				<Pokedex pokemons={pokemons} loading={loading} page={page} setPage={setPage} totalPages={totalPages} />}
 			</main>
 		</FavoriteProvider>
+
 	)
 }
 export default Main
